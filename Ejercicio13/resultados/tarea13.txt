@@ -1,0 +1,5 @@
+Ciudad: Granada
+Población: 232208
+Superficie: 88000.0
+Proyección habitantes 2030: 208987
+Superficie ocupada: 98000.0
