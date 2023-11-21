@@ -9,7 +9,7 @@
  * Hilo secundario 2: 
  * Imprimir la información que genera el sistema en un archivo de salida tipo txt
  * Nos contraron del Ministerio de Geografica para desarrollarles un sistema que los ayude a contabilizar
- * la información de las distintas ciudades.Se debe ingresar por consola los siguientes campos:
+ * la información de las distintas ciudades. Se debe ingresar por consola los siguientes campos:
  * - Ciudad
  * - Cantidad de habitantes
  * - Superficie 
