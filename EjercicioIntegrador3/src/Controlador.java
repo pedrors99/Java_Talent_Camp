@@ -1,3 +1,4 @@
+import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -84,7 +85,8 @@ class Calculos implements Runnable {
 	}
 	
 	public int getDiasRestantes(int index) {
-		return productos.get(index).getFechaElaboracion().until(productos.get(index).getFechaVencimiento()).getDays();
+		int output = (int) ChronoUnit.DAYS.between(productos.get(index).getFechaElaboracion(), productos.get(index).getFechaVencimiento());
+		return output;
 	}
 }
 
@@ -119,7 +121,7 @@ class Output implements Runnable {
 				break;
 			default:
 				System.err.println("Error: Opción no válida");
-				
 		}
+		vista.closeScanner();
 	}
 }

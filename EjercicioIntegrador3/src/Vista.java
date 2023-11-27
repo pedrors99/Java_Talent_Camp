@@ -1,22 +1,29 @@
 import java.util.ArrayList;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Vista {
+	private Scanner sc;
 	private double gananciaBruta;
 	private double gananciaNeta;
 	private double perdidaProyectada;
 	private ArrayList<Integer> diasRestantes;
 	
+	public Vista() {
+		sc = new Scanner(System.in).useLocale(Locale.ENGLISH);
+	}
+	
 	public ModeloStock solicitarInformacion() {
 		ModeloStock modelo = new ModeloStock();
-		Scanner sc = new Scanner(System.in);
+		
+		System.out.println();
 		
 		System.out.print("Introduce los detalles del producto: ");
-		String detalles = sc.nextLine();
+		String detalles = sc.next();
 		modelo.setDetalles(detalles);
 		
 		System.out.print("Introduce el color del producto: ");
-		String color = sc.nextLine();
+		String color = sc.next();
 		modelo.setColor(color);
 		
 		System.out.print("Introduce el peso del producto (kg): ");
@@ -46,18 +53,13 @@ public class Vista {
 		ano = sc.nextInt();
 		modelo.setFechaVencimiento(dia, mes, ano);
 		
-		sc.close();
 		return modelo;
 	}
 	
-	public int numeroProductos() {
-		Scanner sc = new Scanner(System.in);
-		
+	public int numeroProductos() {		
 		System.out.print("Introduce el número de productos que vas a introducir: ");
 		int output = sc.nextInt();
-		System.out.println();
 		
-		sc.close();
 		return output;
 	}
 	
@@ -89,5 +91,9 @@ public class Vista {
 		this.gananciaNeta = gananciaNeta;
 		this.perdidaProyectada = perdidaProyectada;
 		this.diasRestantes = diasRestantes;
+	}
+	
+	public void closeScanner() {
+		this.sc.close();
 	}
 }

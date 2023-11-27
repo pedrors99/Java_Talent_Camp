@@ -54,7 +54,7 @@ public class ModeloStock {
 	}
 	
 	public void setFechaElaboracion(int dia, int mes, int ano) {
-		this.fechaElaboracion = LocalDate.of(dia, mes, ano);
+		this.fechaElaboracion = LocalDate.of(ano, mes, dia);
 	}
 	
 	public LocalDate getFechaElaboracion() {
@@ -66,7 +66,7 @@ public class ModeloStock {
 	}
 	
 	public void setFechaVencimiento(int dia, int mes, int ano) {
-		this.fechaVencimiento = LocalDate.of(dia, mes, ano);
+		this.fechaVencimiento = LocalDate.of(ano, mes, dia);
 	}
 	
 	public LocalDate getFechaVencimiento() {
