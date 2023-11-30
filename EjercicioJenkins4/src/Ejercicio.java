@@ -100,13 +100,13 @@ public class Ejercicio {
 		jenkinsfile.append("\t\t\tsteps {\n");
 		
 		for(Empleado empleado: empleados) {
-			if (empleado.posicion.equals("No válida")) {
-				jenkinsfile.append("\t\t\t\tprint \"" + empleado.nombre + " no tiene una posición válida.\"\n");
+			if (empleado.posicion.equals("No valida")) {
+				jenkinsfile.append("\t\t\t\tprint \"" + empleado.nombre + " no tiene una posicion valida.\"\n");
 			} else {			
 				if (empleado.infraccion()) {
-					jenkinsfile.append("\t\t\t\tprint \"" + empleado.nombre + " ha cometido una infracción.\"\n");
+					jenkinsfile.append("\t\t\t\tprint \"" + empleado.nombre + " ha cometido una infraccion.\"\n");
 				} else {
-					jenkinsfile.append("\t\t\t\tprint \"" + empleado.nombre + " no ha cometido una infracción.\"\n");
+					jenkinsfile.append("\t\t\t\tprint \"" + empleado.nombre + " no ha cometido una infraccion.\"\n");
 				}
 			}
 		}
