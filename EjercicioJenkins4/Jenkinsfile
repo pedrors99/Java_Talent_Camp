@@ -1,0 +1,12 @@
+pipeline {
+	agent any
+	stages {
+		stage("Ejercicio Jenkins 4") {
+			steps {
+				print "Pepito ha cometido una infracción."
+				print "Pepita no ha cometido una infracción."
+				print "Juan no tiene una posición válida."
+			}
+		}
+	}
+}
