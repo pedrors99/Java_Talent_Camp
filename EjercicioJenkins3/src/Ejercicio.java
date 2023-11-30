@@ -10,11 +10,12 @@
  * El proyecto debe estar subido a Github para su compilación.
  * Entregable:
  * - Captura de la consola de Jenkins.
- */
+*/
 
 import java.util.Scanner;
 
-public class EjercicioJenkins3 {
+public class Ejercicio {
+
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
@@ -27,5 +28,6 @@ public class EjercicioJenkins3 {
 
         sc.close();
         System.out.println("Nombre: " + nombre + ", Apellido: " + apellido + ", Edad: "+ edad);
-    }
+	}
+
 }
