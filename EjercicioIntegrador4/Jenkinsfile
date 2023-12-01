@@ -1,0 +1,135 @@
+pipeline {
+	agent any
+	stages {
+		stage("Avatar") {
+			steps {
+				print "Título: Avatar"
+				print "Espectadores 2022: 100000"
+				print "Salas 2022: 10000"
+				print "Ganancias Brutas 2022: 1000000000"
+				print "Ganancias Netas 2022: 800000000"
+				print "Espectadores 2023: 50000"
+				print "Salas 2023: 5000"
+				print "Ganancias Brutas 2023: 500000000"
+				print "Ganancias Netas 2023: 400000000"
+			}
+		}
+		stage("Avengers: Endgame") {
+			steps {
+				print "Título: Avengers: Endgame"
+				print "Espectadores 2022: 90000"
+				print "Salas 2022: 9000"
+				print "Ganancias Brutas 2022: 810000000"
+				print "Ganancias Netas 2022: 648000000"
+				print "Espectadores 2023: 45000"
+				print "Salas 2023: 4500"
+				print "Ganancias Brutas 2023: 405000000"
+				print "Ganancias Netas 2023: 324000000"
+			}
+		}
+		stage("Avatar: The Way of Water") {
+			steps {
+				print "Título: Avatar: The Way of Water"
+				print "Espectadores 2022: 80000"
+				print "Salas 2022: 8000"
+				print "Ganancias Brutas 2022: 640000000"
+				print "Ganancias Netas 2022: 512000000"
+				print "Espectadores 2023: 40000"
+				print "Salas 2023: 4000"
+				print "Ganancias Brutas 2023: 320000000"
+				print "Ganancias Netas 2023: 256000000"
+			}
+		}
+		stage("Titanic") {
+			steps {
+				print "Título: Titanic"
+				print "Espectadores 2022: 70000"
+				print "Salas 2022: 7000"
+				print "Ganancias Brutas 2022: 490000000"
+				print "Ganancias Netas 2022: 392000000"
+				print "Espectadores 2023: 35000"
+				print "Salas 2023: 3500"
+				print "Ganancias Brutas 2023: 245000000"
+				print "Ganancias Netas 2023: 196000000"
+			}
+		}
+		stage("Star Wars: Episode VII - The Force Awakens") {
+			steps {
+				print "Título: Star Wars: Episode VII - The Force Awakens"
+				print "Espectadores 2022: 60000"
+				print "Salas 2022: 6000"
+				print "Ganancias Brutas 2022: 360000000"
+				print "Ganancias Netas 2022: 288000000"
+				print "Espectadores 2023: 30000"
+				print "Salas 2023: 3000"
+				print "Ganancias Brutas 2023: 180000000"
+				print "Ganancias Netas 2023: 144000000"
+			}
+		}
+		stage("Avengers: Infinity War") {
+			steps {
+				print "Título: Avengers: Infinity War"
+				print "Espectadores 2022: 50000"
+				print "Salas 2022: 5000"
+				print "Ganancias Brutas 2022: 250000000"
+				print "Ganancias Netas 2022: 200000000"
+				print "Espectadores 2023: 25000"
+				print "Salas 2023: 2500"
+				print "Ganancias Brutas 2023: 125000000"
+				print "Ganancias Netas 2023: 100000000"
+			}
+		}
+		stage("Spider-Man: No Way Home") {
+			steps {
+				print "Título: Spider-Man: No Way Home"
+				print "Espectadores 2022: 40000"
+				print "Salas 2022: 4000"
+				print "Ganancias Brutas 2022: 160000000"
+				print "Ganancias Netas 2022: 128000000"
+				print "Espectadores 2023: 20000"
+				print "Salas 2023: 2000"
+				print "Ganancias Brutas 2023: 80000000"
+				print "Ganancias Netas 2023: 64000000"
+			}
+		}
+		stage("Jurassic World") {
+			steps {
+				print "Título: Jurassic World"
+				print "Espectadores 2022: 30000"
+				print "Salas 2022: 3000"
+				print "Ganancias Brutas 2022: 90000000"
+				print "Ganancias Netas 2022: 72000000"
+				print "Espectadores 2023: 15000"
+				print "Salas 2023: 1500"
+				print "Ganancias Brutas 2023: 45000000"
+				print "Ganancias Netas 2023: 36000000"
+			}
+		}
+		stage("The Lion King") {
+			steps {
+				print "Título: The Lion King"
+				print "Espectadores 2022: 20000"
+				print "Salas 2022: 2000"
+				print "Ganancias Brutas 2022: 40000000"
+				print "Ganancias Netas 2022: 32000000"
+				print "Espectadores 2023: 10000"
+				print "Salas 2023: 1000"
+				print "Ganancias Brutas 2023: 20000000"
+				print "Ganancias Netas 2023: 16000000"
+			}
+		}
+		stage("The Avengers") {
+			steps {
+				print "Título: The Avengers"
+				print "Espectadores 2022: 10000"
+				print "Salas 2022: 1000"
+				print "Ganancias Brutas 2022: 10000000"
+				print "Ganancias Netas 2022: 8000000"
+				print "Espectadores 2023: 5000"
+				print "Salas 2023: 500"
+				print "Ganancias Brutas 2023: 5000000"
+				print "Ganancias Netas 2023: 4000000"
+			}
+		}
+	}
+}
