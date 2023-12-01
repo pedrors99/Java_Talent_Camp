@@ -1,4 +1,6 @@
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -37,26 +39,19 @@ public class Vista {
 		}
 	}
 	
-	public String toJenkisFile(ArrayList<Modelo> peliculas) {
-		StringBuilder jenkinsfile = new StringBuilder();
-		
-		jenkinsfile.append("pipeline {\n");
-		jenkinsfile.append("\tagent any\n");
-		jenkinsfile.append("\tstages {\n");
-		
-		for(Modelo pelicula: peliculas) {
-			jenkinsfile.append("\t\tstage(\"" + pelicula.getTitulo() + "\") {\n");
-			jenkinsfile.append("\t\t\tsteps {\n");
-			for (String line: pelicula.toString().split("\n")) {
-				jenkinsfile.append("\t\t\t\tprint \"" + line + "\"\n");
-			}
-			jenkinsfile.append("\t\t\t}\n");
-			jenkinsfile.append("\t\t}\n");
+	public void toJenkinsFile(String jenkinsfile) {
+		String fileName = "Jenkinsfile";
+		File file = new File(fileName);
+		try {
+			FileWriter fw = new FileWriter(file, false);
+	        BufferedWriter bw = new BufferedWriter(fw);
+	        bw.write(jenkinsfile);
+	          
+	        bw.close();
+	        fw.close();
+		} catch (IOException e) {
+			System.err.println("Error al escribir a fichero.");
+			e.printStackTrace();
 		}
-		
-		jenkinsfile.append("\t}\n");
-		jenkinsfile.append("}\n");
-		
-		return jenkinsfile.toString();
 	}
 }
