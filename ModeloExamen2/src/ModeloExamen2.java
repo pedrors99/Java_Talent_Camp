@@ -48,7 +48,7 @@ public class ModeloExamen2 {
 
 	public static void main(String[] args) {
 		Empleado empleado = new Empleado();
-		System.out.println(empleado.toJSON());
+		System.out.println(empleado.toString());
 		empleado.jsonToFile("salida.json");
 	}
 
