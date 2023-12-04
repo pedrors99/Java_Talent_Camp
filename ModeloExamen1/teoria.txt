@@ -1,0 +1,91 @@
+Resumen respuestas:
+1  b
+2  c
+3  b
+4  b
+5  b
+6  b
+7  a
+8  c
+9  a
+10 b
+----------------------------
+
+1. ¿Cuál de las siguientes afirmaciones sobre las clases en Java es correcta?
+a) Una clase puede heredar de múltiples clases.
+b) Una clase abstracta no puede tener métodos con implementación.
+c) Las clases finales pueden ser subclasificadas.
+
+Respuesta: b)
+----------------------------
+
+2. ¿Cuál de las siguientes afirmaciones describe mejor la herencia en Java?
+a) La herencia múltiple está permitida en Java.
+b) Las clases hijas heredan todos los miembros privados de la clase padre.
+c) La palabra clave "extends" se utiliza para establecer una relación de herencia.
+
+Respuesta: c)
+----------------------------
+
+3. ¿Cuál de las siguientes afirmaciones sobre las interfaces en Java es correcta?
+a) Las interfaces pueden contener métodos con implementación.
+b) Una clase puede implementar múltiples interfaces.
+c) Las interfaces pueden ser instanciadas directamente.
+
+Respuesta: b)
+----------------------------
+
+4. ¿Cuál de las siguientes opciones describe mejor una API REST en Java?
+a) API para acceder a bases de datos relacionales.
+b) API para interactuar con servicios web utilizando el protocolo HTTP.
+c) API para desarrollar interfaces gráficas de usuario.
+
+Respuesta: b)
+----------------------------
+
+5. ¿Cuál de las siguientes opciones es una implementación de la interfaz List en Java?
+a) HashSet
+b) ArrayList
+c) TreeMap
+
+Respuesta: b)
+----------------------------
+
+6. ¿Cuál de las siguientes opciones describe mejor una excepción verificada en Java?
+a) Una excepción que ocurre durante la ejecución del programa.
+b) Una excepción que debe ser declarada en la firma del método o capturada con un bloque try-catch.
+c) Una excepción que se produce debido a un error en la lógica del programa.
+
+Respuesta: b)
+----------------------------
+
+7. ¿Cuál de las siguientes opciones describe mejor la cardinalidad "uno a muchos" en el contexto de las entidades en Java?
+a) Una entidad puede tener varias relaciones con otras entidades.
+b) Una entidad solo puede tener una relación con otra entidad.
+c) Una entidad no puede tener ninguna relación con otras entidades.
+
+Respuesta: a)
+----------------------------
+
+8. ¿Cuál de las siguientes opciones describe mejor Maven en Java?
+a) Una herramienta para el control de versiones de código fuente.
+b) Un IDE utilizado para desarrollar aplicaciones Java.
+c) Una herramienta para la gestión y construcción de proyectos Java.
+
+Respuesta: c)
+----------------------------
+
+9. ¿Qué significa POM en el contexto de Maven?
+a) Project Object Model
+b) Program Object Model
+c) Project Oriented Management
+
+Respuesta: a)
+----------------------------
+
+10. ¿Cuál de las siguientes opciones describe mejor el patrón de diseño Modelo-Vista-Controlador (MVC) en Java?
+a) Es un patrón de diseño utilizado exclusivamente en el desarrollo de aplicaciones web.
+b) Permite separar la lógica de negocio, la presentación y la interacción del usuario en tres componentes distintos.
+c) Es una librería para la creación de interfaces gráficas de usuario en Java.
+
+Respuesta: b)
