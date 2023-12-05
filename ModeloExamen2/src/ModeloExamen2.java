@@ -239,7 +239,7 @@ class Empleado implements iEmpleado {
 	public void jsonToFile(String fileName) {
 		try {
 			File file = new File(fileName);
-        	FileWriter fw = new FileWriter(file, true);
+        	FileWriter fw = new FileWriter(file, false);
         	BufferedWriter bw = new BufferedWriter(fw);
         	
         	bw.write(this.toJSON().toJSONString());
