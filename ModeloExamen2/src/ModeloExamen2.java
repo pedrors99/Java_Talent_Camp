@@ -133,7 +133,7 @@ class Empleado implements iEmpleado {
 	}
 	
 	public int antiguedadLaborarl() {
-		if (this.fechaSalida == LocalDate.of(0001, 01, 01)) {
+		if (this.fechaSalida.equals(LocalDate.of(0001, 01, 01))) {
 			return (int) ChronoUnit.DAYS.between(this.fechaIngreso, LocalDate.now());
 		} else {
 			return (int) ChronoUnit.DAYS.between(this.fechaIngreso, this.fechaSalida);
@@ -190,7 +190,7 @@ class Empleado implements iEmpleado {
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 		output += "Fecha de ingreso: " + this.getFechaIngreso().format(formatter) + "\n";
 		
-		if (this.fechaSalida == LocalDate.of(0001, 01, 01)) {
+		if (this.fechaSalida.equals(LocalDate.of(0001, 01, 01))) {
 			output += "Fecha de salida: Sigue en la empresa \n";
 		} else {
 			output += "Fecha de salida: " + this.getFechaSalida().format(formatter) + "\n";
